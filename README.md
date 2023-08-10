@@ -1,5 +1,9 @@
 # JSP_Lecture_Evaluation_Service
 
+## 위 프로젝트는 동빈나님의 강의를 보고 만들었습니다
+https://ndb796.tistory.com/35
+
+
 # 프로젝트 개발 순서
 
 1. 개발환경 구축하기
