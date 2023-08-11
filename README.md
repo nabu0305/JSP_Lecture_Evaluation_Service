@@ -18,3 +18,9 @@ https://ndb796.tistory.com/35
 제어판 -> 시스템 -> 고급 시스템 설정 -> 환경 변수 -> Path 더블클릭 -> 새로 만들기 -> 자바 경로 설정 -> 시스템 변수 JAVA_HOME(개발자들의 약속) 만들기
 
 cmd -> javac입력(뭐가 여러개 나오면 정상)
+
+
+eclipse JAVA EE Developers로 설치
+
+Tomcat Windows zip 설치
+bin -> startup으로 서버 실행 -> localhost:8080 크롬에 입력 -> 톰캣 홈페이지 뜨면 정상
