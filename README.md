@@ -27,3 +27,5 @@ bin -> startup으로 서버 실행 -> localhost:8080 크롬에 입력 -> 톰캣 
 
 
 eclipse -> Dynamic Web Project -> name입력 -> Target runtime 설치한 톰캣 버전 설정 -> 경로 설정 -> Finish
+
+Hello World -> src -> main -> webapp -> index.jsp 파일 생성
