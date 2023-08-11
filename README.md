@@ -24,3 +24,6 @@ eclipse JAVA EE Developers로 설치
 
 Tomcat Windows zip 설치
 bin -> startup으로 서버 실행 -> localhost:8080 크롬에 입력 -> 톰캣 홈페이지 뜨면 정상
+
+
+eclipse -> Dynamic Web Project -> name입력 -> Target runtime 설치한 톰캣 버전 설정 -> 경로 설정 -> Finish
