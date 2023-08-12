@@ -5,11 +5,11 @@ import java.sql.PreparedStatement;
 import util.DatabaseUtil;
 
 public class UserDAO {
-	
+	private Connection conn;
 	public int join(String userID, String userPassword) {
-		String SQL = "INSERT INTO USER VALUES (?,?)";
+		String SQL = "INSERT INTO USER VALUES (?, ?)";
 		try {
-			Connection conn = DatabaseUtil.getConnection();
+			conn = DatabaseUtil.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(SQL); //물음표에 데이터를 실제로 넣어주는 역할
 			pstmt.setString(1, userID);
 			pstmt.setString(2, userPassword);
