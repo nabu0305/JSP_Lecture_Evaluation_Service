@@ -153,3 +153,28 @@ index.jsp에 회원가입 페이지 생성
 	</form>
 </body>
 ```
+
+
+# 본격적인 강의평가 사이트 만들기
+
+### 부트스트랩
+http://getbootstrap.com/docs/4.0/getting-started/download/ -> Compiled CSS and JS를 다운로드<br>
+부트스트랩은 일종의 프레임워크이다 <br>
+프레임 워크는 일반적으로 하나의 틀을 의미하기 때문에 틀을 바꾸기는 쉽지않다<br>
+반면에 라이브러리는 일반적으로 프레임워크보다 규모가 더 작고 프레임워크 안에 포함되어있다.<br>
+프레임워크를 쓰기 위해서는 여러 라이브러리가 필요한데 그 중 제이쿼리가 있다.<br>
+
+
+
+
+webapp 안에 css 폴더 생성 -> js 폴더 생성 -> css안에 bootstrap.min.css 삽입 -> js안에 bootstrap.min.js
+
+
+### 제이쿼리
+
+https://jquery.com/download/	->      Download the compressed, production jQuery 3.7.0 다운
+
+### 파퍼
+https://unpkg.com/popper.js@1.12.9/dist/umd/popper.min.js -> 복사후 js폴더안에 파일을 만들어서 붙혀서 사용
+
+부트스트랩 프레임워크의 내부 로직에 사용되는 파퍼 자바스크립트 라이브러리를 다운
