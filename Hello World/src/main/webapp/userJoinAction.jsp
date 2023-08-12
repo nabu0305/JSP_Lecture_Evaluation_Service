@@ -6,7 +6,6 @@
 	request.setCharacterEncoding("UTF-8");
 	String userID = null;
 	String userPassword = null;
-	//사용자로부터 요청 패킷을 확인해서 유저아이디가 존재하는지 확인
 	if(request.getParameter("userID") != null){
 		userID = (String) request.getParameter("userID");
 	}
