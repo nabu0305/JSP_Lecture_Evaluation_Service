@@ -164,8 +164,11 @@ http://getbootstrap.com/docs/4.0/getting-started/download/ -> Compiled CSS and J
 반면에 라이브러리는 일반적으로 프레임워크보다 규모가 더 작고 프레임워크 안에 포함되어있다.<br>
 프레임워크를 쓰기 위해서는 여러 라이브러리가 필요한데 그 중 제이쿼리가 있다.<br>
 
-
-
+부트스트랩은 반응형웹플랫폼이기때문에
+```jsp
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit -=no">
+```
+이 문장을 넣어 줘야한다.
 
 webapp 안에 css 폴더 생성 -> js 폴더 생성 -> css안에 bootstrap.min.css 삽입 -> js안에 bootstrap.min.js
 
