@@ -178,3 +178,25 @@ https://jquery.com/download/	->      Download the compressed, production jQuery 
 https://unpkg.com/popper.js@1.12.9/dist/umd/popper.min.js -> 복사후 js폴더안에 파일을 만들어서 붙혀서 사용
 
 부트스트랩 프레임워크의 내부 로직에 사용되는 파퍼 자바스크립트 라이브러리를 다운
+
+### Custom.css
+
+프레임워크에는 색상이라던지 전반적인게 정해져있는데 바꿔서 사용하고싶을때 따로 custom.css를 만들어서 덮어쓰기 형식으로 사용하는 것이 일반적이다.<br>
+가장 많이 사용하는 것 중에 하나가 웹 폰트이다.<br>
+https://fonts.google.com/earlyaccess 폰트 사이트
+
+```css
+/*부트스트랩같은경우는 네비게이션바 안에 있는 로고들을 정의를 navbar-brand로 한다.*/
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.navbar-brand, h1, h2, h3 ,h4{
+	font-size: 'Jeju Gothic';
+}
+h5{
+	font-family: 'Jeju Gothic';
+	font-size: 18px;
+}
+body{
+	font-family: 'Nanum Gothic';
+}
+```
