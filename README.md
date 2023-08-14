@@ -178,3 +178,8 @@ https://jquery.com/download/	->      Download the compressed, production jQuery 
 https://unpkg.com/popper.js@1.12.9/dist/umd/popper.min.js -> 복사후 js폴더안에 파일을 만들어서 붙혀서 사용
 
 부트스트랩 프레임워크의 내부 로직에 사용되는 파퍼 자바스크립트 라이브러리를 다운
+
+### Custom.css
+
+프레임워크에는 색상이라던지 전반적인게 정해져있는데 바꿔서 사용하고싶을때 따로 custom.css를 만들어서 덮어쓰기 형식으로 사용하는 것이 일반적이다.
+
