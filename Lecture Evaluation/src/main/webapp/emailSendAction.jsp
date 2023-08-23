@@ -50,12 +50,21 @@
 	p.put("mail.smtp.host", "smtp.googlemail.com");
 	p.put("mail.smtp.port", "465");
 	p.put("mail.smtp.starttls.enable", "true");
-	p.put("mail.smtp.auth", "true");
 	p.put("mail.smtp.debug", "true");
 	p.put("mail.smtp.socketFactory.port", "465");
 	p.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 	p.put("mail.smtp.socketFactory.fallback", "false");
-	
+	// [ SMTP 서버 정보 설정 ]
+	// 로그인시 TLS를 사용할 것인지 설정
+	p.put("mail.smtp.starttls.enable", "true");
+	// TLS의 포트번호는 587이며 SSL의 포트번호는 465이다.
+	p.put("mail.smtp.port", "587");
+	// TLS 버전을 지정, TLS 버전 1.0 이나 1.1은 주요 브라우저에서 지원 중단하였다.
+	p.put("mail.smtp.ssl.protocols", "TLSv1.2");
+	// 이메일 발송을 처리해줄 SMTP서버
+	p.put("mail.smtp.host", "smtp.gmail.com");
+	// SMTP 서버의 인증을 사용한다는 의미
+	p.put("mail.smtp.auth", "true");
 	 
 	try{
 	    Authenticator auth = new Gmail();
