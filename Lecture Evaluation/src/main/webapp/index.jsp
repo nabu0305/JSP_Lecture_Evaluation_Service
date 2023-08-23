@@ -238,11 +238,11 @@
 							</div>
 							<div class="form-group">
 								<label>제목</label>
-								<input type="text" name="evalutionTime" class="form-control" maxlength="30">
+								<input type="text" name="evaluationTitle" class="form-control" maxlength="30">
 							</div>
 							<div class="form-group">
 								<label>내용</label>
-								<textarea name="evalutionContent" class="form-control" maxlength="2048" style="height: 180px;"></textarea>
+								<textarea name="evaluationContent" class="form-control" maxlength="2048" style="height: 180px;"></textarea>
 							</div>
 							<div class="form-row">
 								<div class="form-group col-sm-3">
