@@ -310,7 +310,7 @@
 							
 							<div class="form-group">
 								<label>신고 제목</label>
-								<input type="text" name="reptorTime" class="form-control" maxlength="30">
+								<input type="text" name="reportTitle" class="form-control" maxlength="30">
 							</div>
 							<div class="form-group">
 								<label>신고 내용</label>
