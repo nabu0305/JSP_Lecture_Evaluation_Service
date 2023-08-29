@@ -113,4 +113,39 @@ public class EvaluationDAO {
 		}
 		return evaluationList;
 	}
+	
+	public int like(String evaluationID) {
+		String SQL = "UPDATE EVALUATION SET likeCount = likeCount + 1 WHERE evaluationID = ?";
+
+		try {
+
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, Integer.parseInt(evaluationID));
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+		}
+
+		return -1; // 이메일 등록 설정 실패
+
+	}
+	public int delete(String evaluationID) {
+		String SQL = "DELETE FROM EVALUATION WHERE evaluationID = ?";
+
+		try {
+
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, Integer.parseInt(evaluationID));
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+		}
+
+		return -1; // 이메일 등록 설정 실패
+
+	}
 }
