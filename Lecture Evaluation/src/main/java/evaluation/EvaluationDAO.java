@@ -148,4 +148,19 @@ public class EvaluationDAO {
 		return -1; // 이메일 등록 설정 실패
 
 	}
+	public String getUserID(String evaluationID) {
+		String SQL = "SELECT userID FROM USER WHERE evaluationID = ?";
+
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, Integer.parseInt(evaluationID));
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				return rs.getString(1);  // 이메일 등록 여부 반환
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null; // 데이터베이스 오류
+	}
 }
